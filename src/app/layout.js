@@ -1,19 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import StyledComponentsRegistry from '../components/StyledComponentsRegistry';
-import './styles.css';
+import "./styles.css";
 
 function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <StyledComponentsRegistry>
-          {children}
-        </StyledComponentsRegistry>
+        {children}
 
-        <footer>
-          Copyright Whatever Inc.
-        </footer>
+        <footer>Copyright Whatever Inc.</footer>
       </body>
     </html>
   );
